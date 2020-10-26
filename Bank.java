@@ -2,6 +2,17 @@ class account{
     int accountNo;
     float amount;
     String Name; 
+
+     account(){
+        accountNo=997722;
+        amount=500000;
+        Name="Yasiru";
+    }
+    account(int No,float amt,String name){
+        accountNo=No;
+        amount=amt;
+        Name="name";
+    }
      void insert(int No,float amt,String name){
         accountNo=No;
         amount=amt;
@@ -31,5 +42,16 @@ class bank{
         acc.cheackBalance();
         acc.deposit(500);
         acc.withDraw(1000);
+        System.out.println("\n");
+        System.out.println("\n");
+
+        account acc2=new account();
+        acc2.withDraw(500);
+        acc2.cheackBalance();
+
+        account acc3=new account(101010,90000,"OKDYPadmasiri");
+    
+        acc3.cheackBalance();
+
     }
 }
