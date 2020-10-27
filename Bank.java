@@ -8,11 +8,24 @@ class account{
         amount=500000;
         Name="Yasiru";
     }
-    account(int No,float amt,String name){
-        accountNo=No;
-        amount=amt;
-        Name="name";
+
+    account(int accountNo, float amount, String Name){
+        this.accountNo=accountNo;
+        this.amount=amount;
+        this.Name=Name;
     }
+
+    account(account a){ // ************copy constructor
+        accountNo=a.accountNo;
+        amount=a.amount;
+        Name=a.Name;
+    }
+
+    account(int No,String name){
+        accountNo=No;
+        Name=name;
+    }
+
      void insert(int No,float amt,String name){
         accountNo=No;
         amount=amt;
@@ -23,7 +36,7 @@ class account{
          System.out.println("Your account balance is "+amount);
      }
      void cheackBalance(){
-         System.out.println("Your account balance is "+amount);
+         System.out.println("Your account balance is "+amount+"form "+Name);
      }
      void withDraw(float amt){
          if (amount<=amt){
@@ -52,6 +65,14 @@ class bank{
         account acc3=new account(101010,90000,"OKDYPadmasiri");
     
         acc3.cheackBalance();
+
+        account acc4=new account(292929,"yasiru");       //constructor overloading
+        account acc5=new account(acc);                  //copy object acc to acc5
+        acc5.cheackBalance();
+        System.out.println("\n");
+        acc4.cheackBalance();
+        System.out.println("\n");
+
 
     }
 }
