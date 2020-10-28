@@ -24,5 +24,6 @@ class inherit{
     public static void main(String args[]){
         programmer p1=new programmer();
         p1.display();
+        p1.display();
     }
 }
