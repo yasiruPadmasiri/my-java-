@@ -6,10 +6,10 @@ class operation{
 class circle {
      double pi=3.14;
 
-
+     operation op =new operation();
       double area(int radius){
-        operation op;
-        op=new operation();
+        
+        
 
           return op.squre(radius)*pi;
       }
@@ -18,12 +18,15 @@ class circle {
 
 class Address{
     String city,state,country;
+
     Address(String city,String state,String country){
         this.city=city;
         this.state=state;
         this.country=country;
     }
 }
+
+
 class Emp{
     int id;
     String name;
@@ -47,8 +50,12 @@ class aggregresion{
         circle cr=new circle();
     double result=cr.area(7);
     System.out.println(result);
+
     Address address1=new Address("Elpitiye","Galle","southern Country");
+
     Emp emp=new Emp(001,"yasiru",address1);
+
     emp.display();
+    
     }
 }
