@@ -1,6 +1,8 @@
 class student{
     void display(){
         System.out.println("this is a Student");
+        System.out.println("\n");
+
     }
 }
 class primary extends student{
