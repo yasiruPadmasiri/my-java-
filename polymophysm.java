@@ -6,6 +6,8 @@ class student{
 class primary extends student{
     void display(){
         System.out.println("this is primary class");
+        System.out.println("\n");
+
     }
 
 }
