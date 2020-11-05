@@ -27,14 +27,34 @@ class polymophism{
         student st;
         st=new student();
         st.display();
+        System.out.println("\n");
+
         
         st=new primary();
         st.display();
+        System.out.println("\n");
+
+        st.display();
+        System.out.println("\n");
+        System.out.println("\n");
+
 
         st=new teacher();
         st.display();
+        System.out.println("\n");
+
+        st.display();
+        System.out.println("\n");
+        System.out.println("\n");
+
+        System.out.println("\n");
+
+
 
         st=new principle();//multy level inheritance 
+        st.display();
+        System.out.println("\n");
+
         st.display();
     }
 }
