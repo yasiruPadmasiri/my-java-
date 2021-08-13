@@ -66,6 +66,12 @@ class bank{
         account acc3=new account(101010,90000,"OKDYPadmasiri");
     
         acc3.cheackBalance();
+        account acc4=new account(292929,"yasiru");       //constructor overloading
+        account acc5=new account(acc);                  //copy object acc to acc5
+        acc5.cheackBalance();
+        System.out.println("\n");
+        acc4.cheackBalance();
+        System.out.println("\n");
 
         
 
