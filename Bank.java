@@ -6,7 +6,7 @@ class account{
      account(){
         accountNo=997722;
         amount=500000;
-        Name="Yasiru";
+        Name="yasiru";
     }
 
     account(int accountNo, float amount, String Name){
