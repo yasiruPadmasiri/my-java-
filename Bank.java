@@ -57,6 +57,7 @@ class bank{
         acc.withDraw(1000);
         System.out.println("\n");
         System.out.println("\n");
+        System.out.println("\n");
 
         account acc2=new account();
         acc2.withDraw(500);
@@ -66,12 +67,7 @@ class bank{
     
         acc3.cheackBalance();
 
-        account acc4=new account(292929,"yasiru");       //constructor overloading
-        account acc5=new account(acc);                  //copy object acc to acc5
-        acc5.cheackBalance();
-        System.out.println("\n");
-        acc4.cheackBalance();
-        System.out.println("\n");
+        
 
 
     }
